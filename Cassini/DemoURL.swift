@@ -8,9 +8,12 @@
 
 
 import Foundation
+
+
 struct DemoURL
 {
     static let stanford = URL(string: "http://stanford.edu/about/images/intro_about.jpg")
+    
     static var NASA: Dictionary<String,URL> = {
         let NASAURLStrings = [
             "Cassini" : "http://www.jpl.nasa.gov/images/cassini/20090202/pia03883-full.jpg",
@@ -23,4 +26,6 @@ struct DemoURL
         }
         return urls
     }()
+    
 }
+

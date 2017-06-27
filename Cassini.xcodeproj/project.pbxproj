@@ -58,8 +58,8 @@
 			children = (
 				A907C3441EFDC6000055D435 /* Supporting Files */,
 				A907C3361EFDC5E40055D435 /* Main.storyboard */,
-				A907C33E1EFDC5E40055D435 /* Info.plist */,
 				A907C3451EFDC8D80055D435 /* ImageViewController.swift */,
+				A907C33E1EFDC5E40055D435 /* Info.plist */,
 				A907C3471EFDD2520055D435 /* DemoURL.swift */,
 			);
 			path = Cassini;
@@ -316,6 +316,7 @@
 				A907C3431EFDC5E40055D435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
