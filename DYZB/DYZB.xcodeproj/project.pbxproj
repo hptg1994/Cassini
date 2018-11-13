@@ -16,6 +16,7 @@
 		A9D98401219B613B00D6C2A6 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D983FF219B613B00D6C2A6 /* Live.storyboard */; };
 		A9D98404219B615A00D6C2A6 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D98402219B615A00D6C2A6 /* Follow.storyboard */; };
 		A9D98407219B617F00D6C2A6 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D98405219B617F00D6C2A6 /* Profile.storyboard */; };
+		A9D98409219B636600D6C2A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D98408219B636600D6C2A6 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A9D98400219B613B00D6C2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Live.storyboard; sourceTree = "<group>"; };
 		A9D98403219B615A00D6C2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
 		A9D98406219B617F00D6C2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		A9D98408219B636600D6C2A6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A9D983E4219B5CE100D6C2A6 /* Main.storyboard */,
+				A9D98408219B636600D6C2A6 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D98409219B636600D6C2A6 /* MainViewController.swift in Sources */,
 				A9D983E3219B5CE100D6C2A6 /* ViewController.swift in Sources */,
 				A9D983E1219B5CE100D6C2A6 /* AppDelegate.swift in Sources */,
 			);
@@ -390,7 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7S92LV4W54;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,7 +414,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7S92LV4W54;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
