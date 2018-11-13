@@ -12,6 +12,10 @@
 		A9D983E6219B5CE100D6C2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D983E4219B5CE100D6C2A6 /* Main.storyboard */; };
 		A9D983E8219B5CE200D6C2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D983E7219B5CE200D6C2A6 /* Assets.xcassets */; };
 		A9D983EB219B5CE200D6C2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D983E9219B5CE200D6C2A6 /* LaunchScreen.storyboard */; };
+		A9D983FE219B611900D6C2A6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D983FC219B611900D6C2A6 /* Home.storyboard */; };
+		A9D98401219B613B00D6C2A6 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D983FF219B613B00D6C2A6 /* Live.storyboard */; };
+		A9D98404219B615A00D6C2A6 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D98402219B615A00D6C2A6 /* Follow.storyboard */; };
+		A9D98407219B617F00D6C2A6 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D98405219B617F00D6C2A6 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		A9D983E7219B5CE200D6C2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9D983EA219B5CE200D6C2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9D983EC219B5CE200D6C2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D983FD219B611900D6C2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		A9D98400219B613B00D6C2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Live.storyboard; sourceTree = "<group>"; };
+		A9D98403219B615A00D6C2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
+		A9D98406219B617F00D6C2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 		A9D983F3219B5D1F00D6C2A6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A9D983FC219B611900D6C2A6 /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 		A9D983F5219B5D4100D6C2A6 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				A9D983FF219B613B00D6C2A6 /* Live.storyboard */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -102,6 +112,7 @@
 		A9D983F6219B5D4600D6C2A6 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				A9D98402219B615A00D6C2A6 /* Follow.storyboard */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -109,6 +120,7 @@
 		A9D983F7219B5D4C00D6C2A6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				A9D98405219B617F00D6C2A6 /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -181,6 +193,10 @@
 				A9D983EB219B5CE200D6C2A6 /* LaunchScreen.storyboard in Resources */,
 				A9D983E8219B5CE200D6C2A6 /* Assets.xcassets in Resources */,
 				A9D983E6219B5CE100D6C2A6 /* Main.storyboard in Resources */,
+				A9D98401219B613B00D6C2A6 /* Live.storyboard in Resources */,
+				A9D983FE219B611900D6C2A6 /* Home.storyboard in Resources */,
+				A9D98407219B617F00D6C2A6 /* Profile.storyboard in Resources */,
+				A9D98404219B615A00D6C2A6 /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +229,38 @@
 				A9D983EA219B5CE200D6C2A6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A9D983FC219B611900D6C2A6 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D983FD219B611900D6C2A6 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		A9D983FF219B613B00D6C2A6 /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D98400219B613B00D6C2A6 /* Base */,
+			);
+			name = Live.storyboard;
+			sourceTree = "<group>";
+		};
+		A9D98402219B615A00D6C2A6 /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D98403219B615A00D6C2A6 /* Base */,
+			);
+			name = Follow.storyboard;
+			sourceTree = "<group>";
+		};
+		A9D98405219B617F00D6C2A6 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D98406219B617F00D6C2A6 /* Base */,
+			);
+			name = Profile.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,7 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7S92LV4W54;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7S92LV4W54;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
