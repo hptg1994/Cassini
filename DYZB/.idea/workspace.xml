@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1841f644-d579-4c66-b541-8306ae6640e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DYZB/Classes/Main/MainViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DYZB.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DYZB.xcodeproj/project.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcodeproj/project.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB/Base.lproj/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Follow/DYZB/Base.lproj/Follow.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Follow/DYZB/Base.lproj/Follow.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Home/DYZB/Base.lproj/Home.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Home/DYZB/Base.lproj/Home.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Live/DYZB/Base.lproj/Live.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Live/DYZB/Base.lproj/Live.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Main/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Main/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Profile/DYZB/Base.lproj/Profile.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Profile/DYZB/Base.lproj/Profile.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB.xcodeproj/xcuserdata/hptg.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcodeproj/xcuserdata/hptg.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Home/DYZB/Base.lproj/Home.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Home/Controller/DYZB/Base.lproj/Home.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Main/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Main/Controller/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Main/MainViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Main/Controller/MainViewController.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/DYZB-bfcntllnpxfhfuflebivhrylavqm/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,20 +19,80 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_2000678E-6349-4725-8D60-C5B56C39D740" />
   <component name="FUSProjectUsageTrigger">
     <session id="-1388699776">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Swift" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Swift" value="279" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.appcode.build">
+        <counts>
+          <entry key="buildservice" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.appcode.reveal" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.cidr.testingFrameworks.usages" />
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="swift" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="swift" value="279" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift" />
+        <option value="$PROJECT_DIR$/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -41,9 +101,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2239" />
-    <option name="y" value="130" />
-    <option name="width" value="1400" />
+    <option name="x" value="-1280" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -54,10 +114,47 @@
     <panes>
       <pane id="Cidr.FilesView" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="DYZB" type="1d218c8b:XcodeProjectNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="DYZB" type="1d218c8b:XcodeProjectNode" />
+              <item name="DYZB" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="DYZB" type="1d218c8b:XcodeProjectNode" />
+              <item name="DYZB" type="fcab9f18:XcodeViewNode" />
+              <item name="Classes" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="DYZB" type="1d218c8b:XcodeProjectNode" />
+              <item name="DYZB" type="fcab9f18:XcodeViewNode" />
+              <item name="Classes" type="fcab9f18:XcodeViewNode" />
+              <item name="Home" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="DYZB" type="1d218c8b:XcodeProjectNode" />
+              <item name="DYZB" type="fcab9f18:XcodeViewNode" />
+              <item name="Classes" type="fcab9f18:XcodeViewNode" />
+              <item name="Home" type="fcab9f18:XcodeViewNode" />
+              <item name="Controller" type="fcab9f18:XcodeViewNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="UIB&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -72,6 +169,19 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="DYZB" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DYZB" TARGET_NAME="DYZB" CONFIG_NAME="Debug" SCHEME_NAME="DYZB" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="DYZB" RUN_TARGET_NAME="DYZB" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1841f644-d579-4c66-b541-8306ae6640e7" name="Default Changelist" comment="" />
@@ -81,22 +191,25 @@
       <updated>1542140902797</updated>
       <workItem from="1542140905205" duration="9000" />
       <workItem from="1542140920884" duration="72000" />
+      <workItem from="1542141012883" duration="1783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81000" />
+    <option name="totallyTimeSpent" value="1864000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2239" y="130" width="1400" height="1000" extended-state="0" />
+    <frame x="-1280" y="23" width="1280" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2819063" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32929516" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32929516" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -111,5 +224,27 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
