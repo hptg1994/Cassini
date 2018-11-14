@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30F97584F4939F6B96EFEE2A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F970935E387CBCF2E0D388 /* Common.swift */; };
 		A9D983E1219B5CE100D6C2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D983E0219B5CE100D6C2A6 /* AppDelegate.swift */; };
 		A9D983E3219B5CE100D6C2A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D983E2219B5CE100D6C2A6 /* ViewController.swift */; };
 		A9D983E6219B5CE100D6C2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D983E4219B5CE100D6C2A6 /* Main.storyboard */; };
@@ -19,9 +20,11 @@
 		A9D98409219B636600D6C2A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D98408219B636600D6C2A6 /* MainViewController.swift */; };
 		A9D98411219B713300D6C2A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D98410219B713300D6C2A6 /* HomeViewController.swift */; };
 		A9D98414219B7DC500D6C2A6 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D98413219B7DC500D6C2A6 /* UIBarButtonItem-Extension.swift */; };
+		A9D98416219C056100D6C2A6 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D98415219C056100D6C2A6 /* PageTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30F970935E387CBCF2E0D388 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		A9D983DD219B5CE100D6C2A6 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D983E0219B5CE100D6C2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D983E2219B5CE100D6C2A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		A9D98408219B636600D6C2A6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A9D98410219B713300D6C2A6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A9D98413219B7DC500D6C2A6 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		A9D98415219C056100D6C2A6 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				A9D98412219B7D8700D6C2A6 /* Extension */,
+				30F970935E387CBCF2E0D388 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 		A9D9840E219B704700D6C2A6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A9D98415219C056100D6C2A6 /* PageTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,11 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D98416219C056100D6C2A6 /* PageTitleView.swift in Sources */,
 				A9D98414219B7DC500D6C2A6 /* UIBarButtonItem-Extension.swift in Sources */,
 				A9D98409219B636600D6C2A6 /* MainViewController.swift in Sources */,
 				A9D983E3219B5CE100D6C2A6 /* ViewController.swift in Sources */,
 				A9D983E1219B5CE100D6C2A6 /* AppDelegate.swift in Sources */,
 				A9D98411219B713300D6C2A6 /* HomeViewController.swift in Sources */,
+				30F97584F4939F6B96EFEE2A /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7S92LV4W54;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7S92LV4W54;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
