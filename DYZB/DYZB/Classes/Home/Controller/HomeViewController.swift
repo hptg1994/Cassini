@@ -12,10 +12,13 @@ private let kTitleViewHeight: CGFloat = 40
 
 class HomeViewController: UIViewController {
     //MARK: 懒加载熟悉(利用闭包的形式马上执行)
-    private lazy var pageTitleView: PageTitleView = {
+    private lazy var pageTitleView: PageTitleView = { [weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarHeight + kNavigationBarHeight, width: kScreenWidth, height: kTitleViewHeight)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
+
+        // 成为PageTitleViewDelegate的代理 ---> 然后必须遵守协议
+        titleView.delegate = self
         return titleView
     }()
 
@@ -82,6 +85,15 @@ extension HomeViewController {
         let searchItem = UIBarButtonItem(imageName: "btn_search", highLightImageName: "btn_search_clicked", size: size)
         let qrcodeItem = UIBarButtonItem(imageName: "Image_scan", highLightImageName: "Image_scan_click", size: size)
         navigationItem.rightBarButtonItems = [historyItem, searchItem, qrcodeItem]
+    }
+}
+
+// MARK:- 遵守PageTitleViewDelegate协议
+extension HomeViewController: PageTitleViewDelegate {
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int) {
+         //然后此时点击TitleLabel后就可以显示它们的index -->index传入PageContentView --> 使用PageContentView中暴露的方法把index传进来
+        pageContentView.setCurrentIndex(currentIndex: index)
+
     }
 }
 

@@ -8,6 +8,11 @@
 
 import UIKit
 
+/* 此，在点击不同的Title Label的时候。相应的页面也要切换，怎么办？因为它们都是HomeView旗下的两个子View，所以应该是子 -> 父 -> 子 这样传递消息，所以这里我们用代理的方式来实现*/
+protocol PageTitleViewDelegate: class {
+    func pageTitleView(_ titleView: PageTitleView,selectedIndex index: Int)
+}
+
 // 滚动条的高度
 private let kScrollLineHeight: CGFloat = 2
 
@@ -16,6 +21,9 @@ class PageTitleView: UIView {
     // MARK:- 定义属性
     private var currentIndex: Int = 0
     private var titles: [String]
+
+    // 代理属性
+    weak var delegate: PageTitleViewDelegate?
 
     // MARK:- 添加懒加载
     private lazy var scrollView: UIScrollView = {
@@ -73,7 +81,7 @@ extension PageTitleView {
             let label = UILabel()
             //2.设置Label的属性
             label.text = title
-            label.tag = index
+            label.tag = index // 设置label的标签
             label.font = UIFont.systemFont(ofSize: 16.0)
             label.textColor = UIColor.darkGray
             label.textAlignment = .center
@@ -115,9 +123,11 @@ extension PageTitleView {
 
 //MARK:- 监听Label的点击
 extension PageTitleView {
-    @objc private func titleLabelClick(_ tapGes: UITapGestureRecognizer){
+    @objc private func titleLabelClick(_ tapGes: UITapGestureRecognizer) {
         // 1.获取当前label
-        guard let currentLabel = tapGes.view as? UILabel else { return }
+        guard let currentLabel = tapGes.view as? UILabel else {
+            return
+        }
 
         // 2.获取之前的Label
         let oldLabel = titleLabels[currentIndex]
@@ -125,10 +135,18 @@ extension PageTitleView {
         // 3.切换文字颜色
         currentLabel.textColor = UIColor.orange
         oldLabel.textColor = UIColor.darkGray
-        // 保存最新Label的下标值
+
+        // 4.保存最新Label的下标值 --> 之前label.tag = index
         currentIndex = currentLabel.tag
 
+        // 5.滚动条位置发生改变
+        let scrollLineX = CGFloat(currentIndex) * scrollLine.frame.width;
+        UIView.animate(withDuration: 0.15) {
+            self.scrollLine.frame.origin.x = scrollLineX
+        }
 
-        
+        //6.通知代理做事情 --> 然后找人成为他的代理
+        delegate?.pageTitleView(self, selectedIndex:currentIndex)
+
     }
 }

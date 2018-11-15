@@ -97,3 +97,15 @@ extension PageContentView: UICollectionViewDataSource {
         return cell
     }
 }
+
+
+// MARK:- 对外暴露的方法,因为要让外面设置这里面的方法，要传出去
+extension PageContentView {
+
+    // 返回HomeViewController中的Delegate用
+    func setCurrentIndex(currentIndex:Int){
+        // 怎样子滚过去？计算Offset
+        let offsetX = CGFloat(currentIndex) * collectionView.frame.width
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
+    }
+}
