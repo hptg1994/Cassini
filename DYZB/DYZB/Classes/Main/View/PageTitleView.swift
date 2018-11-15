@@ -14,6 +14,7 @@ private let kScrollLineHeight: CGFloat = 2
 class PageTitleView: UIView {
 
     // MARK:- 定义属性
+    private var currentIndex: Int = 0
     private var titles: [String]
 
     // MARK:- 添加懒加载
@@ -83,9 +84,13 @@ extension PageTitleView {
             scrollView.addSubview(label)
             // 将生成的Label，存储到这个titleLabels:[UILabel]，将他们的信息存储起来，以后要用到
             titleLabels.append(label)
+
+            // 5. 给Label添加手势
+            label.isUserInteractionEnabled = true
+            let tapGes = UITapGestureRecognizer(target: self, action: #selector(self.titleLabelClick(_:)))
+            label.addGestureRecognizer(tapGes)
         }
     }
-
 
     private func setupButtomMenuAndScrollLine() {
         // 1.添加底线
@@ -105,5 +110,25 @@ extension PageTitleView {
         // 2.2 设置scrollLine的属性
         scrollView.addSubview(scrollLine)
         scrollLine.frame = CGRect(x: firstLabel.frame.origin.x, y: frame.height - kScrollLineHeight, width: firstLabel.frame.width, height: kScrollLineHeight)
+    }
+}
+
+//MARK:- 监听Label的点击
+extension PageTitleView {
+    @objc private func titleLabelClick(_ tapGes: UITapGestureRecognizer){
+        // 1.获取当前label
+        guard let currentLabel = tapGes.view as? UILabel else { return }
+
+        // 2.获取之前的Label
+        let oldLabel = titleLabels[currentIndex]
+
+        // 3.切换文字颜色
+        currentLabel.textColor = UIColor.orange
+        oldLabel.textColor = UIColor.darkGray
+        // 保存最新Label的下标值
+        currentIndex = currentLabel.tag
+
+
+        
     }
 }

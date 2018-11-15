@@ -6,19 +6,20 @@
 import UIKit
 
 private let ContentCellId = "ContentCellID"
+
 // 每个TabLabel下的自定义内面内容
 class PageContentView: UIView {
 
     // Mark:- 定义属性
     private var childVcs: [UIViewController]
-    private var parentViewController: UIViewController
+    private weak var parentViewController: UIViewController?
 
     //MARK:- 懒加载
     // collectionView 可以滑动，就像Flutter中的CollectionView
-    private lazy var collectionView: UICollectionView = {
+    private lazy var collectionView: UICollectionView = { [weak self] in
         // 1.创建Layout
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = self.bounds.size
+        layout.itemSize = (self?.bounds.size)!
         // 行间距为0
         layout.minimumLineSpacing = 0
         // item的间距也是0
@@ -43,7 +44,7 @@ class PageContentView: UIView {
     }()
 
     // Mark:- 自定义的构造函数，有一个childVcs数组，有几个页面就放几个页面进这个数组，但这些控制器要用到的话，要传到他们的父控制器里面
-    init(frame: CGRect, childVcs: [UIViewController], parentViewController: UIViewController) {
+    init(frame: CGRect, childVcs: [UIViewController], parentViewController: UIViewController?) {
         self.childVcs = childVcs
         self.parentViewController = parentViewController
         super.init(frame: frame)
@@ -63,7 +64,7 @@ extension PageContentView {
     private func setupUI() {
         // 1. 将所有的子控制器添加到父控制器
         for childVc in childVcs {
-            parentViewController.addChild(childVc)
+            parentViewController?.addChild(childVc)
         }
         // 2.添加UICollectionView（用于左右进行滚动）,用于在Cell中存放控制器的View
         addSubview(collectionView)

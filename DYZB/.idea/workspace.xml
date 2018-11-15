@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1841f644-d579-4c66-b541-8306ae6640e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DYZB.xcodeproj/project.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcodeproj/project.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Main/View/PageContentView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Main/View/PageContentView.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DYZB/Classes/Main/View/PageTitleView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Main/View/PageTitleView.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/DYZB-bfcntllnpxfhfuflebivhrylavqm/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +30,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Swift" value="24" />
+          <entry key="Swift" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Swift" value="5815" />
+          <entry key="Swift" value="6289" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.appcode.build">
@@ -49,32 +48,41 @@
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="swift" value="24" />
+          <entry key="swift" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="swift" value="5815" />
+          <entry key="swift" value="6289" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/View/PageContentView.swift">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/View/PageTitleView.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="689">
+              <caret line="107" column="45" lean-forward="true" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/View/PageContentView.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="24" column="92" selection-start-line="24" selection-start-column="92" selection-end-line="24" selection-end-column="92" />
+            <state relative-caret-position="420">
+              <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -97,10 +105,10 @@
         <option value="$PROJECT_DIR$/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift" />
         <option value="$PROJECT_DIR$/DYZB/Classes/Tools/Common.swift" />
         <option value="$PROJECT_DIR$/DYZB/Classes/Main/Controller/MainViewController.swift" />
-        <option value="$PROJECT_DIR$/DYZB/Classes/Main/View/PageTitleView.swift" />
         <option value="$PROJECT_DIR$/DYZB/Classes/Tools/Extension/UIColor-Extension.swift" />
         <option value="$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift" />
         <option value="$PROJECT_DIR$/DYZB/Classes/Main/View/PageContentView.swift" />
+        <option value="$PROJECT_DIR$/DYZB/Classes/Main/View/PageTitleView.swift" />
       </list>
     </option>
   </component>
@@ -112,7 +120,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1280" />
-    <option name="y" value="-34" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="1001" />
   </component>
@@ -190,7 +198,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="DYZB" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/HomeViewController.swift&#10;PageC&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Main/View/PageContentView.swift&#10;Home&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/HomeViewController.swift&#10;{&#9;null&#9;null&#10;page&#9;null&#9;null&#10;UIB&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift" />
+    <property name="SearchEverywhereHistoryKey" value="Page&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Main/View/PageTitleView.swift&#10;Ho&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/HomeViewController.swift&#10;PageC&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Main/View/PageContentView.swift&#10;Home&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/HomeViewController.swift&#10;{&#9;null&#9;null&#10;page&#9;null&#9;null&#10;UIB&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -230,15 +238,15 @@
       <workItem from="1542141012883" duration="7683000" />
       <workItem from="1542219619005" duration="6724000" />
       <workItem from="1542227597586" duration="853000" />
-      <workItem from="1542228901253" duration="6455000" />
+      <workItem from="1542228901253" duration="8621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21796000" />
+    <option name="totallyTimeSpent" value="23962000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1280" y="-34" width="1280" height="1001" extended-state="0" />
+    <frame x="-1280" y="23" width="1280" height="1001" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14135703" />
@@ -313,13 +321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/View/PageTitleView.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/UIKit/UIKit.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
@@ -327,17 +328,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/View/PageContentView.swift">
+    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="420">
+          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift">
+    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/View/PageContentView.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="24" column="92" selection-start-line="24" selection-start-column="92" selection-end-line="24" selection-end-column="92" />
+        <state relative-caret-position="555">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/View/PageTitleView.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="107" column="45" lean-forward="true" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
         </state>
       </provider>
     </entry>
