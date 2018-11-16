@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
 
-        // 成为PageTitleViewDelegate的代理 ---> 然后必须遵守协议
+        // 5.3 成为PageTitleViewDelegate的代理 ---> 5.4 然后必须遵守协议
         titleView.delegate = self
         return titleView
     }()
@@ -36,6 +36,8 @@ class HomeViewController: UIViewController {
             childVcs.append(vc)
         }
         let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
+        // 5.7.3让首页成为代理 --> 5.7.4 遵守PageContentViewDelegate的协议
+        contentView.delegate = self
         return contentView
     }()
 
@@ -60,9 +62,8 @@ extension HomeViewController {
         // 3.3 添加titleView --> 4.（思想）和 4.1 建立PageContentView的class 和 4.3 添加ContentView
         view.addSubview(pageTitleView)
 
-        // 4.3 添加ContentView
+        // 4.3 添加ContentView ---> 4.1.2 设置UI界面
         view.addSubview(pageContentView)
-        
         pageContentView.backgroundColor = UIColor.purple
     }
 
@@ -90,12 +91,19 @@ extension HomeViewController {
     }
 }
 
-//4.2 MARK:- 遵守PageTitleViewDelegate协议
+//5.4 MARK:- 遵守PageTitleViewDelegate协议
 extension HomeViewController: PageTitleViewDelegate {
     func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int) {
-         //然后此时点击TitleLabel后就可以显示它们的index -->index传入PageContentView --> 使用PageContentView中暴露的方法把index传进来
+         //然后此时点击TitleLabel后就可以显示它们的index --> 5.5 index传入PageContentView,使用PageContentView中暴露的方法把index传进来
         pageContentView.setCurrentIndex(currentIndex: index)
 
     }
 }
 
+//5.7.4 遵守PageContentViewDelegate的协议
+extension HomeViewController:PageContentViewDelegate {
+    func pageContentView(contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        // 5.7.5 将这些数据传递给titleView ---> 5.7.6 对传进来的参数做一些设置
+        pageTitleView.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+}
