@@ -16,6 +16,7 @@ protocol PageTitleViewDelegate: class {
 // 滚动条的高度
 private let kScrollLineHeight: CGFloat = 2
 
+// 3.1 建立PageTitleView的Class ---> 3.1.1 构造函数 ---> 3.2 初始化PageTilteView
 class PageTitleView: UIView {
 
     // MARK:- 定义属性
@@ -25,7 +26,7 @@ class PageTitleView: UIView {
     // 代理属性
     weak var delegate: PageTitleViewDelegate?
 
-    // MARK:- 添加懒加载
+    // 3.1.2(1.1) 设置懒加载 --> 3.1.2(1.2) 规定scrollView在parentView的位置
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.showsHorizontalScrollIndicator = false
@@ -37,17 +38,18 @@ class PageTitleView: UIView {
 
     private lazy var titleLabels: [UILabel] = [UILabel]()
 
+    //  3.1.2(3.1) 设置最初的下滑底线ScrollLine的样式 ---> 3.1.2(3.2) 获取第一个Label
     private lazy var scrollLine: UIView = {
         let scrollLine = UIView()
         scrollLine.backgroundColor = UIColor.orange
         return scrollLine
     }()
 
-    // MARK:- 自定义构造函数(自定义构造函数需实现required init?这个东西)
+    // 3.1.1 自定义构造函数(自定义构造函数需实现required init?这个东西)
     init(frame: CGRect, titles: [String]) {
         self.titles = titles
         super.init(frame: frame)
-        // 设置UI界面
+        // 3.1.2设置UI界面
         setupUI()
     }
 
@@ -60,22 +62,28 @@ class PageTitleView: UIView {
 
 //MARK:- 设置UI界面
 extension PageTitleView {
+    // 3.1.2 设置UI界面
     private func setupUI() {
-        // 1. 添加UIScrollView
+        // 3.1.2(1) 添加UIScrollView --> 3.1.2(1.1) 设置懒加载
         addSubview(scrollView)
+        // 3.1.2(1.2) 规定scrollView在parentView的位置 --> 3.1.2(2)
         scrollView.frame = bounds
-        // 2.添加title对应的label
+        
+        // 3.1.2(2) 添加title对应的label
         setupTitleLabels()
-        // 3. 设置底线和滚动的滑块
+        
+        // 3.1.2(3) 设置底线和滚动的滑块
         setupButtomMenuAndScrollLine()
     }
 
+    // 3.1.2(2) 添加title对应的label
     private func setupTitleLabels() {
-        // 0.确定label的一些frame的值
+        // 0.确定每一g个label的frame的值和其大小（长宽高）
         let labelWidth: CGFloat = frame.width / CGFloat(titles.count)
         let labelHeight: CGFloat = frame.height - kScrollLineHeight
         let labelY: CGFloat = 0
 
+        // 3.1.2(2.1)因为有四个Title Lable 所以循环四次，分别添加进scrollView
         for (index, title) in titles.enumerated() {
             //1. 创建UILabel
             let label = UILabel()
@@ -90,32 +98,33 @@ extension PageTitleView {
             label.frame = CGRect(x: labelX, y: labelY, width: labelWidth, height: labelHeight)
             //4.将label添加到scrollView中
             scrollView.addSubview(label)
-            // 将生成的Label，存储到这个titleLabels:[UILabel]，将他们的信息存储起来，以后要用到
+            //4.1 将生成的Label，存储到这个titleLabels:[UILabel]，将他们的信息存储起来，以后要用到
             titleLabels.append(label)
-
-            // 5. 给Label添加手势
+            
+            //3.1.2(4) 给Label添加手势
             label.isUserInteractionEnabled = true
             let tapGes = UITapGestureRecognizer(target: self, action: #selector(self.titleLabelClick(_:)))
             label.addGestureRecognizer(tapGes)
         }
     }
 
+    // 3.1.2(3) 设置底线和滚动的滑块 ---> 3.1.2(3.0)添加底线
     private func setupButtomMenuAndScrollLine() {
-        // 1.添加底线
+        
+        // 3.1.2(3.0)添加底线（一条下划线为区分PageTitleView和PageContentView）--->3.1.2(3.1)设置最初的下滑底线ScrollLine的样式
         let bottomLine = UIView()
         bottomLine.backgroundColor = UIColor.lightGray
         let lineHight: CGFloat = 0.5
         bottomLine.frame = CGRect(x: 0, y: frame.height - lineHight, width: frame.width, height: lineHight)
         // 直接加到当前View而不是scrollView
         addSubview(bottomLine)
-        // 2.添加scrollLine ---> 添加全局scrollLine
-        // 2.1 获取第一个Label --> 本想用scrollView.subviews来获得这个firstLabel，但是这样不好，应该用一个数组存储起来，所以有了 --> private lazy var titleLabels:[UILabel] = [UILabel]()
-        guard let firstLabel = titleLabels.first else {
-            return
-        }
+        
+        // 3.1.2(3.1)(见上)设置最初的下滑底线ScrollLine的样式
+        // 3.1.2(3.2) 获取第一个Label的信息，本想用scrollView.subviews来获得这个firstLabel，但是这样不好，应该用一个数组存储起来，所以有了:private lazy var titleLabels:[UILabel] = [UILabel]()
+        guard let firstLabel = titleLabels.first else { return }
         firstLabel.textColor = UIColor.orange
 
-        // 2.2 设置scrollLine的属性
+        // 3.1.2(3.3) 设置scrollLine的属性(添加到scrollView的subview + 它的位置) --->
         scrollView.addSubview(scrollLine)
         scrollLine.frame = CGRect(x: firstLabel.frame.origin.x, y: frame.height - kScrollLineHeight, width: firstLabel.frame.width, height: kScrollLineHeight)
     }

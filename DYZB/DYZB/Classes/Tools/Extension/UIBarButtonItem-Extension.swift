@@ -18,7 +18,6 @@ extension UIBarButtonItem {
 
     // 使用构造函数来代替createItem这个方法(便利构造函数) 必须明确调用一个设计的构造函数（如上面的UIBarButtonItem(customView: btn)）
     convenience init(imageName:String,highLightImageName:String = "",size:CGSize = .zero) {
-
         // 1.创建UIButton
         let btn = UIButton()
 
@@ -35,7 +34,7 @@ extension UIBarButtonItem {
             btn.frame = CGRect(origin: .zero, size: size)
         }
 
-        // 4.创建UIBarButtonItem
+        // 4.在原有的init(customView:)的基础上创建UIBarButtonItem
         self.init(customView: btn)
     }
 
