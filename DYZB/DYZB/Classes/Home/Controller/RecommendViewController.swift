@@ -32,15 +32,21 @@ class RecommendViewController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: 0, left: kItemMargin, bottom: 10, right: kItemMargin) //这个东西相当于padding
         // 2.创建UICollectionView,第二个参数是刚刚建的布局
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.blue
+        collectionView.backgroundColor = UIColor.white
         // 6.4 添加内容，Controller成为CollectionView的控制元 --> 6.5 遵守UICollectionView的dataSource的协议
         collectionView.dataSource = self
         // 自适应collectionView宽高,随着父控件的缩小而缩小
         collectionView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
-        // 6.5.2 注册Cell --> 6.5.3 添加组头
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)
-        // 6.5.4 注册组头 --> 6.5.5 和取Cell一样，取头
-        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+
+        /*// 6.5.2 注册Cell --> 6.5.3 添加组头(PS:这个只是演示怎么注册，实际的注册看6.7.2)
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)*/
+        /*// 6.5.4 注册组头 --> 6.5.5 和取Cell一样，取头(PS:这个只是演示怎么注册，实际的注册看6.6.1)
+        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)*/
+
+        //  6.6.1 注册xib --> 6.5.5 和取Cell一样，取头
+        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind:UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        // 6.7.2 注册Cell Xib ---> 6.5.1 和取Header一样，取Cell
+        collectionView.register(UINib(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
         return collectionView
     }()
 
@@ -78,17 +84,16 @@ extension RecommendViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // 1.获取Cell,但想要获取Cell，必须先要注册Cell --> 6.5.2 注册Cell
+
+        // 6.5.1 获取Cell,但想要获取Cell，必须先要注册Cell --> 6.5.2 注册Cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
-        cell.backgroundColor = UIColor.red
         return cell
     }
 
-    // 6.5.5 和取Cell一样，取头,用这个方法：
+    // 6.5.5 和取Cell一样，取头,用这个方法：---> 6.7定义cell的内容
     public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         // 1.取出sectionHeaderView
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
-        headerView.backgroundColor = UIColor.green
         return headerView
     }
 }
