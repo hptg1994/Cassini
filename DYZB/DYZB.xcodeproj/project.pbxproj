@@ -28,6 +28,8 @@
 		A9FEB586219FAE83005341F5 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FEB584219FAE83005341F5 /* CollectionHeaderView.xib */; };
 		A9FEB589219FB3B9005341F5 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEB587219FB3B9005341F5 /* CollectionNormalCell.swift */; };
 		A9FEB58A219FB3B9005341F5 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FEB588219FB3B9005341F5 /* CollectionNormalCell.xib */; };
+		A9FEB58D219FBCF3005341F5 /* CollectionLargerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEB58B219FBCF3005341F5 /* CollectionLargerCell.swift */; };
+		A9FEB58E219FBCF3005341F5 /* CollectionLargerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FEB58C219FBCF3005341F5 /* CollectionLargerCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		A9FEB584219FAE83005341F5 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		A9FEB587219FB3B9005341F5 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
 		A9FEB588219FB3B9005341F5 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		A9FEB58B219FBCF3005341F5 /* CollectionLargerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLargerCell.swift; sourceTree = "<group>"; };
+		A9FEB58C219FBCF3005341F5 /* CollectionLargerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionLargerCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,8 @@
 				30F97FCCAE053A54413C6E79 /* PageContentView.swift */,
 				A9FEB587219FB3B9005341F5 /* CollectionNormalCell.swift */,
 				A9FEB588219FB3B9005341F5 /* CollectionNormalCell.xib */,
+				A9FEB58B219FBCF3005341F5 /* CollectionLargerCell.swift */,
+				A9FEB58C219FBCF3005341F5 /* CollectionLargerCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 			files = (
 				A9D983EB219B5CE200D6C2A6 /* LaunchScreen.storyboard in Resources */,
 				A9FEB586219FAE83005341F5 /* CollectionHeaderView.xib in Resources */,
+				A9FEB58E219FBCF3005341F5 /* CollectionLargerCell.xib in Resources */,
 				A9FEB58A219FB3B9005341F5 /* CollectionNormalCell.xib in Resources */,
 				A9D983E8219B5CE200D6C2A6 /* Assets.xcassets in Resources */,
 				A9D983E6219B5CE100D6C2A6 /* Main.storyboard in Resources */,
@@ -304,6 +311,7 @@
 				A9D98416219C056100D6C2A6 /* PageTitleView.swift in Sources */,
 				A9FEB585219FAE83005341F5 /* CollectionHeaderView.swift in Sources */,
 				A9D98414219B7DC500D6C2A6 /* UIBarButtonItem-Extension.swift in Sources */,
+				A9FEB58D219FBCF3005341F5 /* CollectionLargerCell.swift in Sources */,
 				A9D98409219B636600D6C2A6 /* MainViewController.swift in Sources */,
 				A9D983E3219B5CE100D6C2A6 /* ViewController.swift in Sources */,
 				A9D983E1219B5CE100D6C2A6 /* AppDelegate.swift in Sources */,
