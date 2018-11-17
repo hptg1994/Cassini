@@ -23,6 +23,7 @@
 		A9D98411219B713300D6C2A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D98410219B713300D6C2A6 /* HomeViewController.swift */; };
 		A9D98414219B7DC500D6C2A6 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D98413219B7DC500D6C2A6 /* UIBarButtonItem-Extension.swift */; };
 		A9D98416219C056100D6C2A6 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D98415219C056100D6C2A6 /* PageTitleView.swift */; };
+		A9FEB57C219F83E8005341F5 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEB57B219F83E8005341F5 /* RecommendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A9D98410219B713300D6C2A6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A9D98413219B7DC500D6C2A6 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		A9D98415219C056100D6C2A6 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		A9FEB57B219F83E8005341F5 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				A9D983FC219B611900D6C2A6 /* Home.storyboard */,
 				A9D98410219B713300D6C2A6 /* HomeViewController.swift */,
+				A9FEB57B219F83E8005341F5 /* RecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				30F97584F4939F6B96EFEE2A /* Common.swift in Sources */,
 				30F975FE149CD88607696687 /* PageContentView.swift in Sources */,
 				30F97D53BFC7837EE00EC469 /* UIColor-Extension.swift in Sources */,
+				A9FEB57C219F83E8005341F5 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
