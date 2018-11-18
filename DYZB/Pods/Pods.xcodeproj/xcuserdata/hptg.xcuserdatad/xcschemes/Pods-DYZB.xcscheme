@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A9D983DC219B5CE100D6C2A6"
-               BuildableName = "DYZB.app"
-               BlueprintName = "DYZB"
-               ReferencedContainer = "container:DYZB.xcodeproj">
+               BlueprintIdentifier = "2787026D1984D496B089B06C8581C13D"
+               BuildableName = "Pods_DYZB.framework"
+               BlueprintName = "Pods-DYZB"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A9D983DC219B5CE100D6C2A6"
-            BuildableName = "DYZB.app"
-            BlueprintName = "DYZB"
-            ReferencedContainer = "container:DYZB.xcodeproj">
+            BlueprintIdentifier = "2787026D1984D496B089B06C8581C13D"
+            BuildableName = "Pods_DYZB.framework"
+            BlueprintName = "Pods-DYZB"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

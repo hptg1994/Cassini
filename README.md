@@ -40,3 +40,38 @@
 1. 设置导航栏setupNavigationBar()
 
 ![image-20181116195852227](./Resource/自定义HEADER.png)
+
+七. 封装网络请求
+
+
+
+一些斗鱼API：
+
+* 热门数据（热门游戏）：http://capi.douyucdn.cn/api/v1/getHotCate
+* 请求参数：
+
+| 参数名称    | 参数说明 |
+| --------   | :----:   |
+| time    | 获取当前时间的字符串 |
+| limit   | 获取数据的个数 |
+| offset  | 偏移的数据量 |
+
+
+
+- 颜值数据：http://capi.douyucdn.cn/api/v1/getVerticalRoom
+- 请求参数：
+
+| 参数名称 |       参数说明       |
+| -------- | :------------------: |
+| time     | 获取当前时间的字符串 |
+| limit    |    获取数据的个数    |
+| offset   |     偏移的数据量     |
+
+- 热门数据（热门游戏）：http://capi.douyucdn.cn/api/v1/getbigDataRoom
+- 请求参数：
+
+| 参数名称 |       参数说明       |
+| -------- | :------------------: |
+| time     | 获取当前时间的字符串 |
+| limit    |    获取数据的个数    |
+| offset   |     偏移的数据量     |

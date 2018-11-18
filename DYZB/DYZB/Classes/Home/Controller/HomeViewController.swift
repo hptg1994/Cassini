@@ -108,3 +108,4 @@ extension HomeViewController:PageContentViewDelegate {
         pageTitleView.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }
+

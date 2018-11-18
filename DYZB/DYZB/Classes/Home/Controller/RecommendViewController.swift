@@ -22,6 +22,9 @@ private let kHeaderViewID = "kHeaderViewID"
 class RecommendViewController: UIViewController {
 
     // MARK:- 属性
+    // 7.0 发送网络请求,建立extension,设置网络请求的懒加载 ---> 7.3建立这个RecommendViewModal这个Class并完善requestData这个function
+    private lazy var recommendVM:RecommendViewModal = RecommendViewModal()
+
     // 6.2 设置全局UICollectionView属性 --> 6.3
     private lazy var collectionView: UICollectionView = { [unowned self] in
         // 1.创建布局 => 流水布局
@@ -61,6 +64,8 @@ class RecommendViewController: UIViewController {
         view.backgroundColor = UIColor.purple
         // 6.1设置UI
         setupUI()
+        // 7.0 发送网络请求,建立extension
+        loadData()
     }
 
 }
@@ -114,5 +119,13 @@ extension RecommendViewController: UICollectionViewDataSource, UICollectionViewD
             return CGSize(width: kItemWidth, height: kLargerItemHeight)
         }
         return CGSize(width: kItemWidth, height: kNormalItemHeight)
+    }
+}
+
+
+// 7.0 建立网络请求的extension，本来应该是这样的，但是现在引入ViewModal这一概念，所有网络请求放进这个Modal,这里请求ViewModald中的方法
+extension RecommendViewController {
+    private func loadData(){
+        recommendVM.requestData()
     }
 }
