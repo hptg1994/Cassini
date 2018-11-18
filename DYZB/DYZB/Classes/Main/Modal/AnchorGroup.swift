@@ -26,9 +26,16 @@ class AnchorGroup: NSObject {
     /// 定义主播的模型对象数组（将全部转换好的数据（AnchorModal）放到这里）---> setValue(_ value: Any?, forKey key: String)
     @objc lazy var anchors: [AnchorModal] = [AnchorModal]()
 
+
+
+    // MARK:- 构造函数，这个是原来的
     init(dict: [String: NSObject]) {
         super.init()
         setValuesForKeys(dict)
+    }
+    // 这个是不带参数的构造函数，但是原来的不是这个，所以要override
+    override init() {
+
     }
 
     override func setValue(_ value: Any?, forUndefinedKey key: String) {}

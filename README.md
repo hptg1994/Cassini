@@ -67,7 +67,7 @@
 | limit    |    获取数据的个数    |
 | offset   |     偏移的数据量     |
 
-- 热门数据（热门游戏）：http://capi.douyucdn.cn/api/v1/getbigDataRoom
+- 大数据数据：http://capi.douyucdn.cn/api/v1/getbigDataRoom
 - 请求参数：
 
 | 参数名称 |       参数说明       |

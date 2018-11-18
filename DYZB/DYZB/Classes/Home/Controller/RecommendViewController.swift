@@ -23,7 +23,7 @@ class RecommendViewController: UIViewController {
 
     // MARK:- 属性
     // 7.0 发送网络请求,建立extension,设置网络请求的懒加载 ---> 7.3建立这个RecommendViewModal这个Class并完善requestData这个function
-    private lazy var recommendVM:RecommendViewModal = RecommendViewModal()
+    private lazy var recommendVM: RecommendViewModal = RecommendViewModal()
 
     // 6.2 设置全局UICollectionView属性 --> 6.3
     private lazy var collectionView: UICollectionView = { [unowned self] in
@@ -83,15 +83,19 @@ extension RecommendViewController {
 extension RecommendViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     // 6.5.1 将要实现的UI中有12组分组，实现这个方法
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return recommendVM.anchorGroups.count
+//        return 12
     }
 
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
+        // 网络请求后这个就不能写死了
+        /*if section == 0 {
             return 8
         }
-        return 4
+        return 4*/
+        let group = recommendVM.anchorGroups[section]
+        return group.anchors.count //这一步完成后，网络请求就差不多完成了 ---> 7.8 （暂时定7.8）取出模型, 变更Header的具体内容
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -109,7 +113,11 @@ extension RecommendViewController: UICollectionViewDataSource, UICollectionViewD
     // 6.5.5 和取Cell一样，取头,用这个方法：---> 6.7定义cell的内容
     public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         // 1.取出sectionHeaderView
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
+        // 7.8 （暂时定7.8）取出模型, 变更Header的具体内容 ---> 7.9 将这些数据传入到CollectionHeaderView.xib ---> 7.10 上面这个变成 as! CollectionHeaderView,这样可以直接assign这个group
+        // let group = recommendVM.anchorGroups[indexPath.section]
+        // headerView.group = group
+        headerView.group = recommendVM.anchorGroups[indexPath.section]
         return headerView
     }
 
@@ -122,10 +130,11 @@ extension RecommendViewController: UICollectionViewDataSource, UICollectionViewD
     }
 }
 
-
 // 7.0 建立网络请求的extension，本来应该是这样的，但是现在引入ViewModal这一概念，所有网络请求放进这个Modal,这里请求ViewModald中的方法
 extension RecommendViewController {
-    private func loadData(){
-        recommendVM.requestData()
+    private func loadData() {
+        recommendVM.requestData(finishCallback: {
+            self.collectionView.reloadData()
+        })
     }
 }

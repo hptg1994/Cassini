@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1841f644-d579-4c66-b541-8306ae6640e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorModal.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DYZB/Classes/Tools/Extension/NSDate-Extension.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DYZB/Classes/Tools/NetworkTools.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/xcode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB.xcodeproj/project.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcodeproj/project.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB.xcodeproj/xcuserdata/hptg.xcuserdatad/xcschemes/DYZB.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcodeproj/xcuserdata/hptg.xcuserdatad/xcschemes/DYZB.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB.xcodeproj/xcuserdata/hptg.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcodeproj/xcuserdata/hptg.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DYZB/Classes/Home/Controller/RecommendViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Home/Controller/RecommendViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DYZB/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Home/View/CollectionHeaderView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Home/View/CollectionHeaderView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Home/View/CollectionHeaderView.xib" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Home/View/CollectionHeaderView.xib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Home/ViewModel/RecommendViewModal.swift" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Home/ViewModel/RecommendViewModal.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorGroup.swift" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorGroup.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorModal.swift" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorModal.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/DYZB-bfcntllnpxfhfuflebivhrylavqm/" />
@@ -23,34 +19,34 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_2000678E-6349-4725-8D60-C5B56C39D740" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_C2C2AB95-FD60-49A3-B3FB-B5F977656CE7" />
   <component name="FUSProjectUsageTrigger">
     <session id="-1388699776">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Swift" value="64" />
+          <entry key="Swift" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Swift" value="14797" />
+          <entry key="Swift" value="15748" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.appcode.build">
         <counts>
-          <entry key="buildservice" value="3" />
+          <entry key="buildservice" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.appcode.reveal" />
@@ -58,23 +54,32 @@
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="swift" value="64" />
+          <entry key="swift" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="swift" value="14797" />
+          <entry key="swift" value="15748" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorModal.swift">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/View/CollectionHeaderView.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/RecommendViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="114" column="10" lean-forward="true" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -108,12 +113,13 @@
         <option value="$PROJECT_DIR$/DYZB/Classes/Tools/NetworkTools.swift" />
         <option value="$PROJECT_DIR$/DYZB/Classes/Home/Controller/HomeViewController.swift" />
         <option value="$PROJECT_DIR$/DYZB/Classes/Home/ViewModel/RecommandViewModal.swift" />
-        <option value="$PROJECT_DIR$/DYZB/Classes/Home/Controller/RecommendViewController.swift" />
         <option value="$PROJECT_DIR$/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift" />
         <option value="$PROJECT_DIR$/DYZB/Classes/Tools/Extension/NSDate-Extension.swift" />
-        <option value="$PROJECT_DIR$/DYZB/Classes/Home/ViewModel/RecommendViewModal.swift" />
-        <option value="$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorGroup.swift" />
         <option value="$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorModal.swift" />
+        <option value="$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorGroup.swift" />
+        <option value="$PROJECT_DIR$/DYZB/Classes/Home/ViewModel/RecommendViewModal.swift" />
+        <option value="$PROJECT_DIR$/DYZB/Classes/Home/View/CollectionHeaderView.swift" />
+        <option value="$PROJECT_DIR$/DYZB/Classes/Home/Controller/RecommendViewController.swift" />
       </list>
     </option>
   </component>
@@ -125,7 +131,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1280" />
-    <option name="y" value="-34" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="1001" />
   </component>
@@ -137,8 +143,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,6 +183,14 @@
               <item name="DYZB" type="fcab9f18:XcodeViewNode" />
               <item name="Classes" type="fcab9f18:XcodeViewNode" />
               <item name="Home" type="fcab9f18:XcodeViewNode" />
+              <item name="View" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="DYZB" type="1d218c8b:XcodeProjectNode" />
+              <item name="DYZB" type="fcab9f18:XcodeViewNode" />
+              <item name="Classes" type="fcab9f18:XcodeViewNode" />
+              <item name="Home" type="fcab9f18:XcodeViewNode" />
               <item name="ViewModel" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
@@ -202,7 +216,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="DYZB" />
-    <property name="SearchEverywhereHistoryKey" value="Home&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/HomeViewController.swift&#10;Net&#9;null&#9;null&#10;Rec&#9;null&#9;null&#10;Page&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Main/View/PageTitleView.swift&#10;Ho&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/HomeViewController.swift&#10;PageC&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Main/View/PageContentView.swift&#10;{&#9;null&#9;null&#10;page&#9;null&#9;null&#10;UIB&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift" />
+    <property name="SearchEverywhereHistoryKey" value=" &#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/RecommendViewController.swift&#10;Re&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/RecommendViewController.swift&#10;collec&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/View/CollectionHeaderView.swift&#10;Collectio&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/View/CollectionHeaderView.swift&#10;Rec&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/RecommendViewController.swift&#10;Home&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/HomeViewController.swift&#10;Net&#9;null&#9;null&#10;Page&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Main/View/PageTitleView.swift&#10;Ho&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Home/Controller/HomeViewController.swift&#10;PageC&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Main/View/PageContentView.swift&#10;{&#9;null&#9;null&#10;page&#9;null&#9;null&#10;UIB&#9;FILE&#9;file:///Users/hptg/Documents/Projects/Mobile/IOS/IOS-Douyu-Live/DYZB/DYZB/Classes/Tools/Extension/UIBarButtonItem-Extension.swift" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -268,18 +282,18 @@
       <workItem from="1542391202572" duration="8139000" />
       <workItem from="1542403556071" duration="9788000" />
       <workItem from="1542478623526" duration="1793000" />
-      <workItem from="1542485569264" duration="6222000" />
+      <workItem from="1542485569264" duration="9026000" />
+      <workItem from="1542505868454" duration="2063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53430000" />
+    <option name="totallyTimeSpent" value="58297000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1280" y="-34" width="1280" height="1001" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1280" y="23" width="1280" height="1001" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2552504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25928918" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -362,14 +376,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="e#125#137#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/View/CollectionHeaderView.swift">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/View/PageTitleView.swift">
       <provider selected="true" editor-type-id="text-editor">
@@ -409,13 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/RecommendViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="102" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DYZB/Classes/Tools/Extension/NSDate-Extension.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -423,24 +424,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/ViewModel/RecommendViewModal.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorGroup.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DYZB/Classes/Main/Modal/AnchorModal.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        <state relative-caret-position="450">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/ViewModel/RecommendViewModal.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="79" column="37" lean-forward="true" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/View/CollectionHeaderView.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/RecommendViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="114" column="10" lean-forward="true" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
         </state>
       </provider>
     </entry>
