@@ -41,7 +41,13 @@
 
 ![image-20181116195852227](./Resource/自定义HEADER.png)
 
-七. 封装网络请求
+
+
+七. 封装网络请求，建立对应Modal，并完成Json数据和TitleHeader的关联
+
+八. 展示推荐数据
+
+九. 
 
 
 

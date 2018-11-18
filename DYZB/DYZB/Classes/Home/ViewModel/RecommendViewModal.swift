@@ -14,6 +14,7 @@ class RecommendViewModal {
 
 // 7.3 建立这个RecommendViewModal这个Class并完善requestData这个function
 extension RecommendViewModal {
+    
     func requestData(finishCallback:@escaping () -> ()) {
         // 0.定义参数
         let parameters = ["limit": "4", "offset": "0", "time": NSDate.getCurrentTime() as NSString]

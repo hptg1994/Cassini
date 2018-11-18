@@ -20,7 +20,7 @@ class AnchorModal: NSObject {
     @objc var isVertical: Int = 0
 
     // 房间名称
-    @objc let room_name: String = ""
+    @objc var room_name: String = ""
 
     // 主播昵称
     @objc var nickname: String = ""

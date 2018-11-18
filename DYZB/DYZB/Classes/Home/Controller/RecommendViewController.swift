@@ -79,7 +79,7 @@ extension RecommendViewController {
     }
 }
 
-// 6.5 遵守UICollectionView的dataSource的协议（必实现numberOfItemsInSection和cellForItemAt）
+// 6.5 遵守UICollectionView的dataSource的协议（必实现numberOfItemsInSection和cellForItemAt）以及遵守UICollectionViewDelegateFlowLayout协议
 extension RecommendViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     // 6.5.1 将要实现的UI中有12组分组，实现这个方法
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -99,22 +99,40 @@ extension RecommendViewController: UICollectionViewDataSource, UICollectionViewD
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // 8.0 取出模型对象
+        let group = recommendVM.anchorGroups[indexPath.section]
+        let anchor = group.anchors[indexPath.item]
 
         // 6.5.1 获取Cell(按Section不同区分不同的Cell),但想要获取Cell，必须先要注册Cell --> 6.5.2 注册Cell
-        var cell: UICollectionViewCell
+//        var cell: UICollectionViewCell
+
+        // 8.7 对RecommendViewController中提起cell的部分也做一个优化
+        var cell: CollectionBaseCell
+
         if indexPath.section == 1 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kLargerCellID, for: indexPath)
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kLargerCellID, for: indexPath) as! CollectionLargerCell
+            // 8.1.2 将对应的数据传入到相应的Cell中 --> 8.2 对xib中的控件进行设置 --> 8.7后8.8 因为变成了继承关系，所以到后面统一处理
+            // cell.anchor = anchor
+
         } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! CollectionNormalCell
+            // 8.1.2 将对应的数据传入到相应的Cell中 --> 8.2 对xib中的控件进行设置 --> 8.7后8.8 因为变成了继承关系，所以到后面统一处理
+            // cell.anchor = anchor
         }
-        return cell //这一步完了，没结束，如果只是这样的话cell的大小是不能随section的不同而改变的，因此还要让这个class实现UICollectionView的Delegate --> 6.8 让self实现UICollectionViewDelegate
+
+        // 8.8 统一处理cell.anchor = anchor,将模型赋值给Cell
+        cell.anchor = anchor
+
+        // return cell //这一步完了，没结束，如果只是这样的话cell的大小是不能随section的不同而改变的，因此还要让这个class实现UICollectionView的Delegate --> 6.8 让self实现UICollectionViewDelegate, PS:8.0后这个移到了上面，因为要和json关联改变样式（强转成对应的Cell类型）
+        // PPS 8.7后8.8 因为变成了继承关系，所以到后面统一处理,所以这里return cell又回来了
+        return cell
     }
 
     // 6.5.5 和取Cell一样，取头,用这个方法：---> 6.7定义cell的内容
     public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         // 1.取出sectionHeaderView
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
-        // 7.8 （暂时定7.8）取出模型, 变更Header的具体内容 ---> 7.9 将这些数据传入到CollectionHeaderView.xib ---> 7.10 上面这个变成 as! CollectionHeaderView,这样可以直接assign这个group
+        // 7.8 （暂时定7.8）取出模型, 变更Header的具体内容 ---> 7.9 将这些数据传入到CollectionHeaderView.xib ---> 7.10 上面这个变成 as! CollectionHeaderView,这样可以直接assign这个group --> 完
         // let group = recommendVM.anchorGroups[indexPath.section]
         // headerView.group = group
         headerView.group = recommendVM.anchorGroups[indexPath.section]

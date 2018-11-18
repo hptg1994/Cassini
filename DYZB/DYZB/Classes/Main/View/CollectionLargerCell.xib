@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="303" height="304"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX4-Is-gWu">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX4-Is-gWu">
                         <rect key="frame" x="0.0" y="280" width="35" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="KHD-pn-dpp"/>
@@ -47,41 +47,48 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在线人数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYq-CD-Zfs">
-                        <rect key="frame" x="238" y="5" width="60" height="20"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZ3-X1-tgX">
+                        <rect key="frame" x="235" y="8" width="60" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="JO0-LW-EiC"/>
-                            <constraint firstAttribute="width" constant="60" id="Vt1-eI-Yhp"/>
+                            <constraint firstAttribute="height" constant="20" id="Ysx-eG-Lmu"/>
+                            <constraint firstAttribute="width" constant="60" id="acC-Bv-NDE"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
+                        <state key="normal" title="在线人数">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="3"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
                 </subviews>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="guc-DZ-hLy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0XI-Kd-iV7"/>
-                <constraint firstAttribute="trailing" secondItem="TYq-CD-Zfs" secondAttribute="trailing" constant="5" id="0oY-ZH-hhN"/>
                 <constraint firstItem="guc-DZ-hLy" firstAttribute="top" secondItem="84s-WJ-W0S" secondAttribute="bottom" constant="5" id="4T9-rs-KmF"/>
                 <constraint firstItem="pX4-Is-gWu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EhH-1L-6Pc"/>
-                <constraint firstItem="TYq-CD-Zfs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="J3Y-AF-Azi"/>
                 <constraint firstItem="pX4-Is-gWu" firstAttribute="top" secondItem="guc-DZ-hLy" secondAttribute="bottom" constant="5" id="NwA-Hg-OpD"/>
+                <constraint firstItem="KZ3-X1-tgX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="aEk-p3-HxC"/>
                 <constraint firstItem="84s-WJ-W0S" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cKH-YV-gJj"/>
                 <constraint firstAttribute="trailing" secondItem="guc-DZ-hLy" secondAttribute="trailing" constant="5" id="kaj-BW-fzj"/>
+                <constraint firstAttribute="trailing" secondItem="KZ3-X1-tgX" secondAttribute="trailing" constant="8" id="lVG-Bj-bbh"/>
                 <constraint firstAttribute="trailing" secondItem="84s-WJ-W0S" secondAttribute="trailing" id="mAV-Cj-pMW"/>
                 <constraint firstItem="84s-WJ-W0S" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sN8-oN-XoD"/>
                 <constraint firstAttribute="bottom" secondItem="pX4-Is-gWu" secondAttribute="bottom" constant="10" id="v59-Cj-ryH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="303" height="304"/>
+            <connections>
+                <outlet property="cityBtn" destination="pX4-Is-gWu" id="0X1-Nh-lP5"/>
+                <outlet property="iconImageView" destination="84s-WJ-W0S" id="kOW-Fp-iI2"/>
+                <outlet property="nickNameLabel" destination="guc-DZ-hLy" id="bkU-hG-5KB"/>
+                <outlet property="onlineBtn" destination="KZ3-X1-tgX" id="g6P-6f-Eej"/>
+            </connections>
             <point key="canvasLocation" x="-58.399999999999999" y="143.92803598200899"/>
         </collectionViewCell>
     </objects>
