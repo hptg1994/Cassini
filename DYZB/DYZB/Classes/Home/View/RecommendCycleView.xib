@@ -27,10 +27,11 @@
                     </collectionViewFlowLayout>
                     <connections>
                         <outlet property="dataSource" destination="iN0-l3-epB" id="doJ-4g-gge"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="VDJ-Hx-1Dc"/>
                     </connections>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mN0-ks-jRg">
-                    <rect key="frame" x="326" y="113" width="39" height="37"/>
+                    <rect key="frame" x="326" y="116" width="39" height="37"/>
                     <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="currentPageIndicatorTintColor" red="1" green="0.65745048278272" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </pageControl>
@@ -40,7 +41,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ezc-x4-rOI" secondAttribute="bottom" id="C23-Mh-1Vg"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mN0-ks-jRg" secondAttribute="trailing" constant="10" id="Dj2-Hv-9ZT"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ezc-x4-rOI" secondAttribute="trailing" id="FOG-5N-zsb"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mN0-ks-jRg" secondAttribute="bottom" id="QaM-0O-rBP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mN0-ks-jRg" secondAttribute="bottom" constant="-3" id="QaM-0O-rBP"/>
                 <constraint firstItem="Ezc-x4-rOI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="kB4-D6-m6j"/>
                 <constraint firstItem="Ezc-x4-rOI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="u57-VA-Mt3"/>
             </constraints>
