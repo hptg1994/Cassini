@@ -47,7 +47,12 @@
 
 八. 展示推荐数据
 
-九. 
+九. 无线轮播 布局界面（就是最上面那个图片左右轮播）
+
+* UIScorllView 但需要考虑循环利用的问题
+* UICollectionView 已经考虑循环利用的问题 + UIPageController（右下角）
+
+![image-20181118145138256](./Resource/无限轮播.png)
 
 
 

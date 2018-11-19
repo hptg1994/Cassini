@@ -13,7 +13,7 @@ private let kItemWidth = (kScreenWidth - 3 * kItemMargin) / 2
 private let kNormalItemHeight = kItemWidth * 3 / 4
 private let kLargerItemHeight = kItemWidth * 4 / 3
 private let kHeaderViewHeight: CGFloat = 50
-
+private let kHeaderPhotoCycleViewHeight = kScreenWidth * 3 / 8
 private let kNormalCellID = "kNormalCellID"
 private let kLargerCellID = "kLargerCellID"
 private let kHeaderViewID = "kHeaderViewID"
@@ -59,6 +59,15 @@ class RecommendViewController: UIViewController {
         return collectionView
     }()
 
+    // 9.3 创建RecommendCycleView，懒加载
+    private lazy var headerPhotoCycleView: RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView() // ---> 任何一个View都要有frame才能显示出来
+        cycleView.frame = CGRect(x: 0, y: -kHeaderPhotoCycleViewHeight, width: kScreenWidth, height: kHeaderPhotoCycleViewHeight) // 这个cycleView应该加到CollectionView里面这样才能随着collectionView的滚动而一起滚动 ---> 9.4 将PageHeaderCycleView添加到CollectionView中
+        // 上面一步完成后 ---> 9.5 取消这个View随父控件的缩放而缩放
+        return cycleView
+    }()
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.purple
@@ -76,6 +85,12 @@ extension RecommendViewController {
     private func setupUI() {
         // 6.3 将UICollectionView添加到控制器的View中 --> 6.4 添加内容，Controller成为CollectionView的控制元
         view.addSubview(collectionView)
+
+        // 9.4 将PageHeaderCycleView添加到CollectionView中
+        collectionView.addSubview(headerPhotoCycleView)
+
+        // 9.6 设置collectionView的内边距使其能够显示在collectionView的顶部（给他一个在collectionView显示的空间 ---> 9.7 在xib中拖拽放置UICollectionView用以显示循环滚动的图片和pageControl --->  9.8 显示数据（必须设置数据源（右键xib，将datasouce拖拽至RecommandCycleViewController（左侧面板）））
+        collectionView.contentInset = UIEdgeInsets(top: kHeaderPhotoCycleViewHeight, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -153,6 +168,13 @@ extension RecommendViewController {
     private func loadData() {
         recommendVM.requestData(finishCallback: {
             self.collectionView.reloadData()
+        })
+
+        // 9.15.2 RecommendViewController中的loadData调用这个方法 --> 9.15.3 解析数据
+        recommendVM.requestCycleData(finishCallback: {
+            // 9.15.3(6) RecommendViewController中使用这个数据 ---> 9.15.3(7) 传递这个数据到RecommendCycleView中 ---> 9.15.3(8) Pre展示这个View
+//            recommendVM.pageHeaderCycleModels
+            self.headerPhotoCycleView.cycleModels = self.recommendVM.pageHeaderCycleModels
         })
     }
 }

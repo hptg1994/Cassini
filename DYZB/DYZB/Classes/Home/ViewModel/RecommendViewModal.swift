@@ -8,14 +8,16 @@ import Foundation
 class RecommendViewModal {
     // MARK:- 7.6 创建出来的每一个group将它放到全局对象中
     lazy var anchorGroups: [AnchorGroup] = [AnchorGroup]()
+    // 9.15.3(5) 创建对应的懒加载属性,创建的每一个pageHeaderCycleModels将它放到全局对象中 ---> 9.15.3(6) RecommendViewController中使用这个数据/**/
+    lazy var pageHeaderCycleModels = [PageHeaderCycleModel]()
     private lazy var bigDataGroup: AnchorGroup = AnchorGroup()
     private lazy var prettyDataGroup: AnchorGroup = AnchorGroup()
 }
 
 // 7.3 建立这个RecommendViewModal这个Class并完善requestData这个function
 extension RecommendViewModal {
-    
-    func requestData(finishCallback:@escaping () -> ()) {
+    // 请求推荐数据
+    func requestData(finishCallback: @escaping () -> ()) {
         // 0.定义参数
         let parameters = ["limit": "4", "offset": "0", "time": NSDate.getCurrentTime() as NSString]
 
@@ -106,4 +108,25 @@ extension RecommendViewModal {
             finishCallback()
         }
     }
+
+    // 9.15.1请求无限轮播的数据 ---> 9.15.2 RecommandViewController中的loadData调用这个方法
+    func requestCycleData(finishCallback: @escaping () -> ()) {
+        NetworkTools.requestData(type: .GET, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version": "2.300"]) { result in
+            // 9.15.3 解析数据
+            // 9.15.3(1) 获取字典数据
+            guard let resultDict = result as? [String: NSObject] else {
+                return
+            }
+            // 9.15.3(2) 根据data的key获取数据
+            guard let dataArray = resultDict["data"] as? [[String: NSObject]] else { return }
+            // 9.15.3(3) 字典转模型 ---> 9.15.3(4) 创建对应的Model
+            for dict in dataArray {
+                self.pageHeaderCycleModels.append(PageHeaderCycleModel(dict: dict))
+            }
+
+
+            finishCallback()
+        }
+    }
+
 }
