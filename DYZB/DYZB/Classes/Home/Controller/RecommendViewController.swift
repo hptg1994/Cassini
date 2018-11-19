@@ -14,6 +14,7 @@ private let kNormalItemHeight = kItemWidth * 3 / 4
 private let kLargerItemHeight = kItemWidth * 4 / 3
 private let kHeaderViewHeight: CGFloat = 50
 private let kHeaderPhotoCycleViewHeight = kScreenWidth * 3 / 8
+private let kGameViewHeight:CGFloat = 90
 private let kNormalCellID = "kNormalCellID"
 private let kLargerCellID = "kLargerCellID"
 private let kHeaderViewID = "kHeaderViewID"
@@ -62,9 +63,17 @@ class RecommendViewController: UIViewController {
     // 9.3 创建RecommendCycleView，懒加载
     private lazy var headerPhotoCycleView: RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView() // ---> 任何一个View都要有frame才能显示出来
-        cycleView.frame = CGRect(x: 0, y: -kHeaderPhotoCycleViewHeight, width: kScreenWidth, height: kHeaderPhotoCycleViewHeight) // 这个cycleView应该加到CollectionView里面这样才能随着collectionView的滚动而一起滚动 ---> 9.4 将PageHeaderCycleView添加到CollectionView中
+        cycleView.frame = CGRect(x: 0, y: -(kHeaderPhotoCycleViewHeight+kGameViewHeight), width: kScreenWidth, height: kHeaderPhotoCycleViewHeight) // 这个cycleView应该加到CollectionView里面这样才能随着collectionView的滚动而一起滚动 ---> 9.4 将PageHeaderCycleView添加到CollectionView中
         // 上面一步完成后 ---> 9.5 取消这个View随父控件的缩放而缩放
         return cycleView
+    }()
+
+    // 10.2.1 创建RecommendGameView的懒加载属性 --> 10.2.2 将gameView添加到collectionView中
+    private lazy var gameView: RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        //  10.2.3 设置这个gameView的frame使其位置固定 ---> 10.2.4 取消自动缩放
+        gameView.frame = CGRect(x: 0, y: -kGameViewHeight, width: kScreenWidth, height: kGameViewHeight)
+        return gameView
     }()
 
 
@@ -89,8 +98,11 @@ extension RecommendViewController {
         // 9.4 将PageHeaderCycleView添加到CollectionView中
         collectionView.addSubview(headerPhotoCycleView)
 
+        // 10.2.2 将gameView添加到collectionView中
+        collectionView.addSubview(gameView)
+
         // 9.6 设置collectionView的内边距使其能够显示在collectionView的顶部（给他一个在collectionView显示的空间 ---> 9.7 在xib中拖拽放置UICollectionView用以显示循环滚动的图片和pageControl --->  9.8 显示数据（必须设置数据源（右键xib，将datasouce拖拽至RecommandCycleViewController（左侧面板）））
-        collectionView.contentInset = UIEdgeInsets(top: kHeaderPhotoCycleViewHeight, left: 0, bottom: 0, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: kHeaderPhotoCycleViewHeight + kGameViewHeight, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -168,6 +180,9 @@ extension RecommendViewController {
     private func loadData() {
         recommendVM.requestData(finishCallback: {
             self.collectionView.reloadData()
+
+            // 10.4.1 将数据传递给GameView --> 10.4.2 监听数据的改变
+            self.gameView.groups = self.recommendVM.anchorGroups
         })
 
         // 9.15.2 RecommendViewController中的loadData调用这个方法 --> 9.15.3 解析数据
