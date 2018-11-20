@@ -31,7 +31,9 @@ class HomeViewController: UIViewController {
         // 2.确定所有的子控制器
         var childVcs = [UIViewController]()
         childVcs.append(RecommendViewController())
-        for _ in 0..<3 {
+        // 11.1 添加GameViewController到childVcs中 ---> 11.2 对i进行数据展示的UICollectionView进行懒加载
+        childVcs.append(GameViewController())
+        for _ in 0..<2 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVcs.append(vc)
