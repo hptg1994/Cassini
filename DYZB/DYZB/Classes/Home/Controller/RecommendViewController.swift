@@ -180,9 +180,16 @@ extension RecommendViewController {
     private func loadData() {
         recommendVM.requestData(finishCallback: {
             self.collectionView.reloadData()
-
-            // 10.4.1 将数据传递给GameView --> 10.4.2 监听数据的改变
-            self.gameView.groups = self.recommendVM.anchorGroups
+            // 10.4.1 将数据传递给GameView --> 10.4.2 监听数据的改变 
+            var groups = self.recommendVM.anchorGroups
+            // 移除热门和颜值这两组数据
+            groups.removeFirst()
+            groups.removeFirst()
+            // 添加滑到最后的"更多组"
+            let moreGroup = AnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            self.gameView.groups = groups
         })
 
         // 9.15.2 RecommendViewController中的loadData调用这个方法 --> 9.15.3 解析数据

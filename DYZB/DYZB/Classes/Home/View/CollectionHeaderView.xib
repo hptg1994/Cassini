@@ -26,7 +26,6 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_hot" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-yp-SMn">
                     <rect key="frame" x="10" y="21" width="18" height="18"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="18" id="Poz-xT-ory"/>
                         <constraint firstAttribute="height" constant="18" id="v31-vq-NEj"/>
                     </constraints>
                 </imageView>
@@ -63,6 +62,7 @@
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <connections>
                 <outlet property="iconImageView" destination="fTc-yp-SMn" id="FlM-1n-pER"/>
+                <outlet property="moreBtn" destination="fP1-Ww-flv" id="NWJ-I7-Tgx"/>
                 <outlet property="titleLabel" destination="bcr-Mq-B2j" id="GAR-US-LKk"/>
             </connections>
             <point key="canvasLocation" x="128" y="147.52623688155924"/>

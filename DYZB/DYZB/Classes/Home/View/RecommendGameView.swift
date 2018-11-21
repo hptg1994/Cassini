@@ -14,18 +14,9 @@ private let kEdgeInsetMargin: CGFloat = 10
 class RecommendGameView: UIView {
 
     //MARK:- 10.4 定义数据的一个属性 --> 10.4.1 将数据传递给GameView
-    var groups: [AnchorGroup]? {
+    var groups: [BaseGameModel]? {
         // 10.4.2 监听数据的改变 --> 10.4.3 取group中的数据
         didSet {
-            // 移除热门和颜值这两组数据
-            groups?.removeFirst()
-            groups?.removeFirst()
-
-            // 2.添加滑到最后的"更多组"
-            let moreGroup = AnchorGroup()
-            moreGroup.tag_name = "更多"
-            groups?.append(moreGroup)
-
             collectionView.reloadData()
         }
     }
