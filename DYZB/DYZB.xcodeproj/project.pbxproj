@@ -30,6 +30,8 @@
 		A982806C21A0BB4B008F63D5 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A982806B21A0BB4B008F63D5 /* NSDate-Extension.swift */; };
 		A982806E21A0C5EB008F63D5 /* AnchorModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A982806D21A0C5EB008F63D5 /* AnchorModal.swift */; };
 		A982807021A11E5D008F63D5 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A982806F21A11E5D008F63D5 /* CollectionBaseCell.swift */; };
+		A9B1D40F21A66BBC00138A05 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1D40E21A66BBC00138A05 /* AmuseViewController.swift */; };
+		A9B1D41121A670F200138A05 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1D41021A670F200138A05 /* AmuseViewModel.swift */; };
 		A9D983E1219B5CE100D6C2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D983E0219B5CE100D6C2A6 /* AppDelegate.swift */; };
 		A9D983E3219B5CE100D6C2A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D983E2219B5CE100D6C2A6 /* ViewController.swift */; };
 		A9D983E6219B5CE100D6C2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D983E4219B5CE100D6C2A6 /* Main.storyboard */; };
@@ -80,6 +82,8 @@
 		A982806B21A0BB4B008F63D5 /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		A982806D21A0C5EB008F63D5 /* AnchorModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModal.swift; sourceTree = "<group>"; };
 		A982806F21A11E5D008F63D5 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
+		A9B1D40E21A66BBC00138A05 /* AmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		A9B1D41021A670F200138A05 /* AmuseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
 		A9D983DD219B5CE100D6C2A6 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D983E0219B5CE100D6C2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D983E2219B5CE100D6C2A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 			children = (
 				30F97C9DD9EBE74CCF5A01D0 /* RecommendViewModal.swift */,
 				A946DD2D21A4A59900345310 /* GameViewModel.swift */,
+				A9B1D41021A670F200138A05 /* AmuseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				A9D98410219B713300D6C2A6 /* HomeViewController.swift */,
 				A9FEB57B219F83E8005341F5 /* RecommendViewController.swift */,
 				A946DD2B21A493D900345310 /* GameViewController.swift */,
+				A9B1D40E21A66BBC00138A05 /* AmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -447,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B1D40F21A66BBC00138A05 /* AmuseViewController.swift in Sources */,
 				A982804A21A091E2008F63D5 /* NetworkTools.swift in Sources */,
 				A9D98416219C056100D6C2A6 /* PageTitleView.swift in Sources */,
 				A9FEB585219FAE83005341F5 /* CollectionHeaderView.swift in Sources */,
@@ -475,6 +482,7 @@
 				30F975CC108BD40EDA8D46E2 /* RecommendViewModal.swift in Sources */,
 				30F97E446568F43241CBE9ED /* AnchorGroup.swift in Sources */,
 				A946DD3621A4BAAB00345310 /* AnchorGroup-BeforeInherit.swift in Sources */,
+				A9B1D41121A670F200138A05 /* AmuseViewModel.swift in Sources */,
 				30F975D648B0EA1202F660A8 /* PageHeaderCycleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
