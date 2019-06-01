@@ -74,7 +74,7 @@ extension HomeViewController {
 
     /* 设置导航栏的具体内容 */
     private func setupNavigationBar() {
-        // 2.1 设置左侧的Item --> Tools/UIBarButtonItem-Extension定义了UIBarButtonItem的Extension
+        // 2.1 设置NavigationBar左侧的Item --> Tools/UIBarButtonItem-Extension定义了UIBarButtonItem的Extension
         /* 下面这个是原始的方法，但是我们设置了UIBarButtonItem的extension，所以我们开始用extension中自定义的constructor
         let btn = UIButton()
         btn.setImage(UIImage(named: "logo"), for: .normal)

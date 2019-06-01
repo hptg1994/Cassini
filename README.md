@@ -8,7 +8,18 @@
 
 ## 详细内容
 
-一.项目框架的搭建
+**一.项目的开始**
+
+1. 分类： 开始的时候新建四个Folder，因为这个App主要有四个页面，分别为Main，Home，Profile， Follow，Live（每个文件夹代表了一个页面）
+
+**一.项目框架的搭建**
+
+	1. 首先，这个App整体是一个，App底部Tab Bar控制不同页面的App，所以，在Main文件夹中，拖入一个TabBarView Controller（默认自带两个Tap和两个页面），但是，这两个页面是默认不带顶部导航栏的，所以，选中每一个页面，然后顶部Editor => Embed in => Navigation Controller 选项，这样就给每一个页面的前面嵌套了 一个Navigation Controllers。
+ 	2. 默认拖进来的TabBarView Controller自带两个页面，这是不够的，我们起码要四个页面
+
+
+
+
 
 * 在StoryBoard中添加TabBarView Controller，然后添加四个Embed了Navigation Controller的UIViewController，然后这四个  => Editor => Refactor to Storyboard，这样就把这些Navigation Controller 单独封装并放在相应的文件夹中
 

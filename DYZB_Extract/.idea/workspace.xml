@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1841f644-d579-4c66-b541-8306ae6640e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DYZB/DYZB/Classes/Home/Controller/AmuseViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DYZB/DYZB/Classes/Home/ViewModel/AmuseViewModel.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DYZB/Classes/Home/View/AmuseMenuView.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DYZB/Classes/Home/View/AmuseMenuView.xib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DYZB/Classes/Main/Controller/BaseAnchorViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DYZB/Classes/Main/ViewModel/BaseViewModel.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DYZB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DYZB/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DYZB/DYZB.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../DYZB/DYZB.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DYZB/DYZB.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../DYZB/DYZB.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DYZB/DYZB/Classes/Home/Controller/HomeViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../DYZB/DYZB/Classes/Home/Controller/HomeViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DYZB.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/DYZB.xcworkspace/xcuserdata/hptg.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/DYZB-bfcntllnpxfhfuflebivhrylavqm/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,6 +59,7 @@
     <session id="736914351">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -96,34 +87,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/View/AmuseMenuView.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/AmuseViewController.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="104" selection-start-line="20" selection-start-column="104" selection-end-line="20" selection-end-column="104" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -186,11 +150,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2080" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="3760" />
     <option name="y" value="-1057" />
-    <option name="width" value="1680" />
-    <option name="height" value="1027" />
+    <option name="width" value="1920" />
+    <option name="height" value="989" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -349,16 +313,15 @@
       <workItem from="1542746687395" duration="8547000" />
       <workItem from="1542861629962" duration="347000" />
       <workItem from="1542862028859" duration="2222000" />
-      <workItem from="1542865046244" duration="5633000" />
+      <workItem from="1542865046244" duration="5792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93429000" />
+    <option name="totallyTimeSpent" value="93588000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2080" y="-1057" width="1680" height="1027" extended-state="6" />
-    <editor active="true" />
+    <frame x="3760" y="-1057" width="1920" height="989" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23687424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -655,17 +618,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/AmuseViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/View/AmuseMenuView.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DYZB/Classes/Home/Controller/AmuseViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="104" selection-start-line="20" selection-start-column="104" selection-end-line="20" selection-end-column="104" />
         </state>
       </provider>
     </entry>
